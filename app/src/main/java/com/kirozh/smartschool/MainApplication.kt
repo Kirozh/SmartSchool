@@ -13,11 +13,13 @@ class MainApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+
         startKoin {
             androidLogger(Level.ERROR)
             androidContext(this@MainApplication)
             modules(appModule)
         }
+
         if (BuildConfig.DEBUG) Timber.plant(DebugTree())
     }
 }
