@@ -53,6 +53,7 @@ dependencies {
     testImplementation(libs.junit.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.androidx.test.espresso.espresso.core)
+    implementation(libs.timber)
 
     // Compose
     implementation(libs.androidx.activity.activity.compose)

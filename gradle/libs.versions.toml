@@ -32,6 +32,7 @@ androidx-test-espresso-espresso-core = "3.5.1"
 com-android-support-multidex = "2.0.1"
 io-insert-koin-koin-test-junit4 = "3.5.0"
 google-services = "4.4.1"
+timber = "5.0.1"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
@@ -66,6 +67,7 @@ androidx-test-espresso-espresso-core = { module = "androidx.test.espresso:espres
 com-android-support-multidex = { module = "com.android.support:multidex", version.ref = "com-android-support-multidex" }
 io-insert-koin-koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4", version.ref = "io-insert-koin-koin-test-junit4" }
 google-services = { module = "com.google.gms:google-services", version.ref = "google-services" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 [plugins]
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
