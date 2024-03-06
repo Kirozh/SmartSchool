@@ -1,7 +1,7 @@
 package com.kirozh.smartschool.domain.repository
 
-import com.kirozh.smartschool.data.models.Parent
-import com.kirozh.smartschool.data.models.Teacher
+import com.kirozh.smartschool.domain.models.Parent
+import com.kirozh.smartschool.domain.models.Teacher
 
 interface SchoolRepository {
 

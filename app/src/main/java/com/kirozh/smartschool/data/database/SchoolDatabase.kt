@@ -4,14 +4,14 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.kirozh.smartschool.data.models.Absence
-import com.kirozh.smartschool.data.models.ClassNumber
-import com.kirozh.smartschool.data.models.Lesson
-import com.kirozh.smartschool.data.models.Mark
-import com.kirozh.smartschool.data.models.Parent
-import com.kirozh.smartschool.data.models.Student
-import com.kirozh.smartschool.data.models.Subject
-import com.kirozh.smartschool.data.models.Teacher
+import com.kirozh.smartschool.domain.models.Absence
+import com.kirozh.smartschool.domain.models.ClassNumber
+import com.kirozh.smartschool.domain.models.Lesson
+import com.kirozh.smartschool.domain.models.Mark
+import com.kirozh.smartschool.domain.models.Parent
+import com.kirozh.smartschool.domain.models.Student
+import com.kirozh.smartschool.domain.models.Subject
+import com.kirozh.smartschool.domain.models.Teacher
 
 @Database(
     entities = [

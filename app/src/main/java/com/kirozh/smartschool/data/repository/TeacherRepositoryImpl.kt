@@ -1,9 +1,7 @@
 package com.kirozh.smartschool.data.repository
 
 import com.kirozh.smartschool.data.database.SchoolDao
-import com.kirozh.smartschool.data.models.Student
-import com.kirozh.smartschool.data.models.Teacher
-import com.kirozh.smartschool.domain.repository.StudentRepository
+import com.kirozh.smartschool.domain.models.Teacher
 import com.kirozh.smartschool.domain.repository.TeacherRepository
 
 class TeacherRepositoryImpl(

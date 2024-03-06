@@ -5,13 +5,13 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
-import com.kirozh.smartschool.data.models.Absence
-import com.kirozh.smartschool.data.models.Lesson
-import com.kirozh.smartschool.data.models.Mark
-import com.kirozh.smartschool.data.models.Parent
-import com.kirozh.smartschool.data.models.Student
-import com.kirozh.smartschool.data.models.Subject
-import com.kirozh.smartschool.data.models.Teacher
+import com.kirozh.smartschool.domain.models.Absence
+import com.kirozh.smartschool.domain.models.Lesson
+import com.kirozh.smartschool.domain.models.Mark
+import com.kirozh.smartschool.domain.models.Parent
+import com.kirozh.smartschool.domain.models.Student
+import com.kirozh.smartschool.domain.models.Subject
+import com.kirozh.smartschool.domain.models.Teacher
 @Dao
 interface SchoolDao {
 

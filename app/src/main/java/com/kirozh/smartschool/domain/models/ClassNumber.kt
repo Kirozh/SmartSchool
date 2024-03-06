@@ -1,4 +1,4 @@
-package com.kirozh.smartschool.data.models
+package com.kirozh.smartschool.domain.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

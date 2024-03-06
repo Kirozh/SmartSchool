@@ -1,10 +1,8 @@
 package com.kirozh.smartschool.domain.repository
 
-import com.kirozh.smartschool.data.models.Student
+import com.kirozh.smartschool.data.remote.dto.StudentDto
 
 interface StudentRepository {
 
-    fun getStudent(studentId: Int): Student?
-
-    fun getStudentByLogin(login: String): Student?
+    suspend fun getStudent(studentId: Int): StudentDto?
 }

@@ -54,6 +54,7 @@ dependencies {
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.androidx.test.espresso.espresso.core)
     implementation(libs.timber)
+    implementation(libs.retrofit)
 
     // Compose
     implementation(libs.androidx.activity.activity.compose)
