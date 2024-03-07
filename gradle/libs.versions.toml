@@ -34,6 +34,7 @@ io-insert-koin-koin-test-junit4 = "3.5.0"
 google-services = "4.4.1"
 timber = "5.0.1"
 retrofit = "2.9.0"
+detekt = "1.23.3"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
@@ -73,3 +74,4 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 
 [plugins]
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }

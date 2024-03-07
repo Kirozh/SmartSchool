@@ -1,8 +1,12 @@
+import io.gitlab.arturbosch.detekt.Detekt
+import io.gitlab.arturbosch.detekt.DetektCreateBaselineTask
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
     id("com.google.gms.google-services")
     id("com.google.devtools.ksp")
+    id("io.gitlab.arturbosch.detekt")
 }
 
 android {
@@ -42,6 +46,44 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.6"
     }
+}
+
+allprojects {
+    group = rootProject.libs.plugins.detekt.get().pluginId
+    version = rootProject.libs.versions.detekt.get()
+    apply(plugin = rootProject.libs.plugins.detekt.get().pluginId)
+
+    detekt {
+        toolVersion = rootProject.libs.versions.detekt.get()
+        source.setFrom("src")
+        config.setFrom("$rootDir/config/detekt.yml")
+        buildUponDefaultConfig = true
+        baseline = file("$rootDir/config/detekt-baseline.xml")
+        basePath = projectDir.absolutePath
+    }
+
+    tasks.withType<Detekt>().configureEach {
+        reports {
+            html.required.set(true)
+            xml.required.set(false)
+            txt.required.set(true)
+            sarif.required.set(false)
+            md.required.set(false)
+        }
+    }
+
+    tasks.withType<Detekt>().configureEach {
+        jvmTarget = "1.8"
+    }
+    tasks.withType<DetektCreateBaselineTask>().configureEach {
+        jvmTarget = "1.8"
+    }
+}
+
+detekt {
+    toolVersion = "1.23.0"
+    config.setFrom(files("config/detekt/detekt.yml"))
+    buildUponDefaultConfig = true
 }
 
 dependencies {
