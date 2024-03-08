@@ -5,10 +5,12 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.kirozh.smartschool.data.common.Resource
+import com.kirozh.smartschool.domain.repository.StudentRepository
 import com.kirozh.smartschool.domain.usecases.student.GetStudentInfoUseCase
 import kotlinx.coroutines.flow.onEach
 
 class StudentViewModel(
+//    private val studentRepository: StudentRepository
     private val studentInfoUseCase: GetStudentInfoUseCase,
 //    private val savedStateHandle: SavedStateHandle,
     id: Int = 0,
