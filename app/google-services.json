@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199292131537",
+    "project_id": "smartschool-f18f3",
+    "storage_bucket": "smartschool-f18f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199292131537:android:06b6780593e512f8d3cdf0",
+        "android_client_info": {
+          "package_name": "com.kirozh.smartschool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSbaSNr1iWEE9CtZmusQmSs-2fgI7EEXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
